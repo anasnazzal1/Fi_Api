@@ -1,0 +1,15 @@
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\bin\Debug\net8.0\F_BLL.deps.json
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\bin\Debug\net8.0\F_BLL.dll
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\bin\Debug\net8.0\F_BLL.pdb
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\bin\Debug\net8.0\F_DAL.dll
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\bin\Debug\net8.0\F_DAL.pdb
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\F_BLL.csproj.AssemblyReference.cache
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\F_BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\F_BLL.AssemblyInfoInputs.cache
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\F_BLL.AssemblyInfo.cs
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\F_BLL.csproj.CoreCompileInputs.cache
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\F_BLL.csproj.Up2Date
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\F_BLL.dll
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\refint\F_BLL.dll
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\F_BLL.pdb
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\ref\F_BLL.dll

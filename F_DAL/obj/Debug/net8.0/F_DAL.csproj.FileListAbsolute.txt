@@ -1,0 +1,14 @@
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\bin\Debug\net8.0\F_DAL.deps.json
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\bin\Debug\net8.0\F_DAL.runtimeconfig.json
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\bin\Debug\net8.0\F_DAL.dll
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\bin\Debug\net8.0\F_DAL.pdb
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\F_DAL.csproj.AssemblyReference.cache
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\F_DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\F_DAL.AssemblyInfoInputs.cache
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\F_DAL.AssemblyInfo.cs
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\F_DAL.csproj.CoreCompileInputs.cache
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\F_DAL.dll
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\refint\F_DAL.dll
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\F_DAL.pdb
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\F_DAL.genruntimeconfig.cache
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\ref\F_DAL.dll
