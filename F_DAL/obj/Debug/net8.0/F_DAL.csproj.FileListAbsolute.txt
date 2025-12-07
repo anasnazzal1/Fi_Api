@@ -12,3 +12,4 @@ C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\refint\F_DAL.dll
 C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\F_DAL.pdb
 C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\F_DAL.genruntimeconfig.cache
 C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\ref\F_DAL.dll
+C:\Users\Anas nazzal\Desktop\API_Project\F_DAL\obj\Debug\net8.0\F_DAL.sourcelink.json

@@ -13,3 +13,4 @@ C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\F_BLL.dll
 C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\refint\F_BLL.dll
 C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\F_BLL.pdb
 C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\ref\F_BLL.dll
+C:\Users\Anas nazzal\Desktop\API_Project\F_BLL\obj\Debug\net8.0\F_BLL.sourcelink.json

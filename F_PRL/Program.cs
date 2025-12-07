@@ -1,6 +1,9 @@
 using F_BLL.Service;
 using F_DAL.DATA;
+using F_DAL.Models;
 using F_DAL.Respsotry;
+using F_DAL.Utilites;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -8,12 +11,11 @@ using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Add services
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddLocalization(options => options.ResourcesPath = "");
 
 const string defaultCulture = "en";
@@ -24,7 +26,10 @@ var supportedCultures = new[]
     new CultureInfo("ar")
 };
 
-builder.Services.Configure<RequestLocalizationOptions>(options => {
+
+
+builder.Services.Configure<RequestLocalizationOptions>(options =>
+{
     options.DefaultRequestCulture = new RequestCulture(defaultCulture);
     options.SupportedCultures = supportedCultures;
     options.SupportedUICultures = supportedCultures;
@@ -36,15 +41,30 @@ builder.Services.Configure<RequestLocalizationOptions>(options => {
 });
 
 builder.Services.AddDbContext<ApplecationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+//to identity
+builder.Services
+    .AddIdentity<ApplecationUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApplecationDbContext>()
+    .AddDefaultTokenProviders();
 
 
-builder.Services.AddScoped<ICatgryResostry,CatgryResostry>();
+
+
+builder.Services.AddScoped<ICatgryResostry, CatgryResostry>();
 builder.Services.AddScoped<ICatgryService, CatgryService>();
+builder.Services.AddScoped<IAuthraizationService, AutharizationService>();
+
+
+// Register seeders (MULTIPLE)
+builder.Services.AddScoped<ISeedData, RoleSeedData>();
+builder.Services.AddScoped<ISeedData, UserSeadData>();
 var app = builder.Build();
+
+// Localization
 app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -52,9 +72,20 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
 
-app.MapControllers();
+// Run ALL seeders
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
 
+    var seeders = services.GetServices<ISeedData>();  // <== important!
+
+    foreach (var seeder in seeders)
+    {
+        await seeder.SeedData();  // <== correct method name
+    }
+}
+
+app.MapControllers();
 app.Run();

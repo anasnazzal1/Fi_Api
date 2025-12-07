@@ -180,3 +180,9 @@ C:\Users\Anas nazzal\Desktop\API_Project\F_PRL\obj\Debug\net8.0\F_PRL.Resorces.S
 C:\Users\Anas nazzal\Desktop\API_Project\F_PRL\obj\Debug\net8.0\ar\F_PRL.resources.dll
 C:\Users\Anas nazzal\Desktop\API_Project\F_PRL\bin\Debug\net8.0\Mapster.dll
 C:\Users\Anas nazzal\Desktop\API_Project\F_PRL\bin\Debug\net8.0\Mapster.Core.dll
+C:\Users\Anas nazzal\Desktop\API_Project\F_PRL\obj\Debug\net8.0\F_PRL.sourcelink.json
+C:\Users\Anas nazzal\Desktop\API_Project\F_PRL\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Anas nazzal\Desktop\API_Project\F_PRL\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Anas nazzal\Desktop\API_Project\F_PRL\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Anas nazzal\Desktop\API_Project\F_PRL\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Anas nazzal\Desktop\API_Project\F_PRL\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll

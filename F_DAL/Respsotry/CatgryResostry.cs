@@ -23,7 +23,8 @@ namespace F_DAL.Respsotry
 
         public List<Catgry> GetaAll()
         {
-            var catgry = _context.catgries.Include(c => c.translations).ToList();
+           
+            var catgry = _context.Catgries.Include(c => c.translations).ToList();
 
             return catgry;
 
@@ -31,7 +32,7 @@ namespace F_DAL.Respsotry
 
        public  Catgry Create(Catgry request) {
 
-            _context.catgries.Add(request);
+            _context.Catgries.Add(request);
             _context.SaveChanges();
             return request;
 
