@@ -11,6 +11,6 @@ namespace F_BLL.Service
     public interface IAuthraizationService
     {
         Task<RegisterResponse>registerAsync(RegisterRequest request);
-        Task<RegisterResponse>LoginAsync(LoginRequest request); 
+        Task<LoginResponse>LoginAsync(LoginRequest request); 
     }
 }

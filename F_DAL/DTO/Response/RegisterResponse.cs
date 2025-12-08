@@ -8,6 +8,9 @@ namespace F_DAL.DTO.Response
 {
     public class RegisterResponse
     {
+        public bool Sucsess {  get; set; }
         public string Message { get; set; }
+
+        public List<string> Errors { get; set; }
     }
 }

@@ -42,9 +42,9 @@ namespace F_DAL.Utilites
                     EmailConfirmed = true
                 };
 
-                await _UserManager.CreateAsync(user1, "test@123");
-                await _UserManager.CreateAsync(user2, "test@123");
-                await _UserManager.CreateAsync(user3, "test@123");
+                await _UserManager.CreateAsync(user1, "Nazzal671088&&");
+                await _UserManager.CreateAsync(user2, "Nazzal671088&&");
+                await _UserManager.CreateAsync(user3, "Nazzal671088&&");
 
 
                 await _UserManager.AddToRoleAsync(user1, "SuperAdmin");

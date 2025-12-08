@@ -7,6 +7,7 @@ using F_DAL.Models;
 using F_DAL.Respsotry;
 using F_PRL.Resorces;
 using Mapster;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +17,8 @@ namespace F_PRL.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
+    [Authorize]
     public class CatgryController : ControllerBase
     {
        

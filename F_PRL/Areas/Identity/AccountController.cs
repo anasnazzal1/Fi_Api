@@ -20,8 +20,23 @@ namespace F_PRL.Areas.Identity
         public async Task<IActionResult> Register(RegisterRequest request)
         {
             var result = await _authraizationService.registerAsync(request);
+            if (!result.Sucsess)
+            {
+                return BadRequest(result);
+            }
             return Ok(result);
         }
-        
+
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login(LoginRequest request)
+        {
+            var result = await _authraizationService.LoginAsync(request);
+            if (!result.Sucsess)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
+
     }
 }
