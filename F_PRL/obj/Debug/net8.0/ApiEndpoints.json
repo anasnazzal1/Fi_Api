@@ -1,6 +1,27 @@
 [
   {
     "ContainingType": "F_PRL.Areas.Identity.AccountController",
+    "Method": "ConfirmEmail",
+    "RelativePath": "api/auth/Account/ConfirmEmail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "F_PRL.Areas.Identity.AccountController",
     "Method": "Login",
     "RelativePath": "api/auth/Account/Login",
     "HttpMethod": "POST",
@@ -32,7 +53,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "F_PRL.Controllers.CatgryController",
+    "ContainingType": "F_PRL.Areas.User.CatgryController",
     "Method": "index",
     "RelativePath": "api/Catgry",
     "HttpMethod": "GET",
@@ -42,9 +63,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "F_PRL.Controllers.CatgryController",
+    "ContainingType": "F_PRL.Areas.Admin.CatogresController",
     "Method": "Create",
-    "RelativePath": "api/Catgry",
+    "RelativePath": "api/Catogres",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -56,26 +77,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "F_PRL.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[F_PRL.WeatherForecast, F_PRL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

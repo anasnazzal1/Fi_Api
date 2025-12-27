@@ -11,6 +11,9 @@ namespace F_BLL.Service
     public interface IAuthraizationService
     {
         Task<RegisterResponse>registerAsync(RegisterRequest request);
-        Task<LoginResponse>LoginAsync(LoginRequest request); 
+        Task<LoginResponse>LoginAsync(LoginRequest request);
+        public  Task<bool> ConfirmEmail(string token, string userId);
+        Task<ForgitPasswordResponse> RequestPasswordReset(ForgitPasswordRequest request);
+        Task<ResetPasswordResponse> resetpassword(ResetPasswordRequest request);
     }
 }

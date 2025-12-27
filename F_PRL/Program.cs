@@ -3,8 +3,10 @@ using F_DAL.DATA;
 using F_DAL.Models;
 using F_DAL.Respsotry;
 using F_DAL.Utilites;
+using F_PRL;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -102,15 +104,8 @@ builder.Services.AddSwaggerGen(c =>
 });
 });
 
+AppConfigration.config(builder.Services);
 
-builder.Services.AddScoped<ICatgryResostry, CatgryResostry>();
-builder.Services.AddScoped<ICatgryService, CatgryService>();
-builder.Services.AddScoped<IAuthraizationService, AutharizationService>();
-
-
-// Register seeders (MULTIPLE)
-builder.Services.AddScoped<ISeedData, RoleSeedData>();
-builder.Services.AddScoped<ISeedData, UserSeadData>();
 var app = builder.Build();
 
 // Localization

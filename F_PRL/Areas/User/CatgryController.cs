@@ -13,12 +13,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
 
-namespace F_PRL.Controllers
+namespace F_PRL.Areas.User
 {
     [Route("api/[controller]")]
     [ApiController]
 
-    [Authorize]
+  
     public class CatgryController : ControllerBase
     {
        
@@ -37,15 +37,7 @@ namespace F_PRL.Controllers
 
             return Ok(new {message = _localizer["success"].Value, catgry });
         }
-        [HttpPost("")]
-        public IActionResult Create(CatgryRequestDto requset)
-        {
-
-            _catgryService.Create(requset);
-
-            return Ok(new { message = _localizer["success"].Value });
-
-        }
+       
 
 
     }
